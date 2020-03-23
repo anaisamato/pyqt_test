@@ -1,5 +1,7 @@
 class ReadFile(object):
-
+    """
+    Class to read a file and create a list with data
+    """
     def __init__(self, filename):
 
         self.filename = filename
@@ -7,6 +9,9 @@ class ReadFile(object):
         self.read_file()
 
     def read_file(self):
+        """
+        Read the file 'filename' and extract it data in a list
+        """
 
         x, y = [], []
         with open(self.filename, "r") as file:
